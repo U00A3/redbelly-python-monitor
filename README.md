@@ -7,7 +7,7 @@
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)
 
-**🚀 Advanced Real-time monitoring solution for Redbelly blockchain nodes**
+**🚀 Simple Command-line Tool for Live Monitoring of Redbelly Blockchain Nodes**
 
 *Get comprehensive insights into your node's performance, network status, and blockchain metrics*
 
