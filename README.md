@@ -115,7 +115,7 @@ Automatically configures your Redbelly node for monitoring.
 1. Open a terminal.
 2. Go to the project folder:  
    ```bash
-   cd redbelly_script_monitor/scripts
+   cd redbelly-python-monitor/scripts
    ```
 3. Run the script with administrator rights:  
    ```bash
@@ -133,7 +133,7 @@ Quickly checks if your node is running correctly and shows a simple health summa
 1. Open a terminal.
 2. Go to the scripts folder:  
    ```bash
-   cd redbelly_script_monitor/scripts
+   cd redbelly-python-monitor/scripts
    ```
 3. Run the script:  
    ```bash
@@ -151,7 +151,7 @@ Performs a full diagnostic of your node and system, checking services, configura
 1. Open a terminal.
 2. Go to the scripts folder:  
    ```bash
-   cd redbelly_script_monitor/scripts
+   cd redbelly-python-monitor/scripts
    ```
 3. Run the script:  
    ```bash
