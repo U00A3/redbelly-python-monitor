@@ -42,7 +42,7 @@ Your Redbelly node must be configured with:
 ```bash
 # 1️⃣ Clone the repository
 git clone https://github.com/U00A3/redbelly-python-monitor.git
-cd redbelly_script_monitor
+cd redbelly-python-monitor
 
 # 2️⃣ Install dependencies
 pip3 install -r requirements.txt
