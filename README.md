@@ -327,24 +327,7 @@ We welcome contributions! Here's how you can help:
 - 📖 **Documentation** - Help improve docs
 - 🧪 **Testing** - Test on different configurations
 
-### 🚀 **Development Setup**
-```bash
-# Fork and clone the repository
-git clone https://github.com/yourusername/redbelly-python-monitor.git
-cd redbelly_python_monitor
-
-# Create development branch
-git checkout -b feature/your-feature-name
-
-# Install development dependencies
-pip3 install -r requirements-dev.txt
-
-# Make your changes and test
-python3 status.py -a http://testnet-node:6539
-
-# Submit pull request
 ```
-
 ### 📋 **Contribution Guidelines**
 - ✅ Follow PEP 8 style guidelines
 - ✅ Add tests for new features
