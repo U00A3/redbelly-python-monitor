@@ -53,6 +53,27 @@ chmod +x status.py
 # 4️⃣ Test connection
 python3 status.py --help
 ```
+
+## ⚙️ Configuration
+
+### 🔴 **Redbelly Node Setup**
+
+Ensure your Redbelly node is running with these flags:
+
+```bash
+# Required flags for monitoring
+--statusserver.addr=127.0.0.1
+--statusserver.port=6539
+--prometheus.addr=127.0.0.1
+--prometheus.port=6539
+```
+
+### 🌐 **Network Configuration**
+
+For remote monitoring, ensure firewall allows access to:
+- **Port 6539** - Status server and Prometheus metrics
+- **Proper networking** - Node accessible from monitoring location
+
 ---
 
 ## 🚀 Quick Start
@@ -83,25 +104,72 @@ python3 status.py -mb 500 -r 60
 
 ---
 
-## ⚙️ Configuration
+## 🛠️ Included Utility Scripts
 
-### 🔴 **Redbelly Node Setup**
+This repository contains several helpful scripts in the `scripts/` folder to make node monitoring and troubleshooting easier, even for non-technical users:
 
-Ensure your Redbelly node is running with these flags:
+### 1. `setup-monitoring.sh`
+**Purpose:**  
+Automatically configures your Redbelly node for monitoring.  
+**How to use:**  
+1. Open a terminal.
+2. Go to the project folder:  
+   ```bash
+   cd redbelly_script_monitor/scripts
+   ```
+3. Run the script with administrator rights:  
+   ```bash
+   sudo ./setup-monitoring.sh
+   ```
+4. Follow the on-screen instructions.  
+*This script will safely update your node configuration and open the necessary ports for monitoring.*
 
+---
+
+### 2. `check-node-health.sh`
+**Purpose:**  
+Quickly checks if your node is running correctly and shows a simple health summary.  
+**How to use:**  
+1. Open a terminal.
+2. Go to the scripts folder:  
+   ```bash
+   cd redbelly_script_monitor/scripts
+   ```
+3. Run the script:  
+   ```bash
+   ./check-node-health.sh
+   ```
+4. Read the results.  
+*You will see information about node status, balance, synchronization, and possible issues.*
+
+---
+
+### 3. `diagnose.sh`
+**Purpose:**  
+Performs a full diagnostic of your node and system, checking services, configuration, network, and more.  
+**How to use:**  
+1. Open a terminal.
+2. Go to the scripts folder:  
+   ```bash
+   cd redbelly_script_monitor/scripts
+   ```
+3. Run the script:  
+   ```bash
+   ./diagnose.sh
+   ```
+4. Review the detailed report.  
+*This script is helpful if you need to troubleshoot problems or share diagnostics with support.*
+
+---
+
+**Tip:**  
+If you see a "Permission denied" error, make the script executable:  
 ```bash
-# Required flags for monitoring
---statusserver.addr=127.0.0.1
---statusserver.port=6539
---prometheus.addr=127.0.0.1
---prometheus.port=6539
+chmod +x scriptname.sh
 ```
+Replace `scriptname.sh` with the name of the script you want to run.
 
-### 🌐 **Network Configuration**
-
-For remote monitoring, ensure firewall allows access to:
-- **Port 6539** - Status server and Prometheus metrics
-- **Proper networking** - Node accessible from monitoring location
+---
 
 ---
 
